@@ -73,7 +73,7 @@ module.exports = function (context) {
   }
 
   if (directoryExists(iosFolder)) {
-    var paths = ["GoogleService-Info.plist", path.join(iosFolder, "www", "GoogleService-Info.plist")];
+    var paths = ["GoogleService-Info.plist", path.join(iosFolder, "GoogleService-Info.plist")];
 
     for (var i = 0; i < paths.length; i++) {
       if (fileExists(paths[i])) {
