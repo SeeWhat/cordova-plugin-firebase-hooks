@@ -23,7 +23,7 @@
 
         <pods-config ios-min-version="7.0" uses-frameworks="true"/>
 
-        <hook type="after_prepare" src="hooks/ios/copy-google-services.js"/>
+        <hook type="before_plugin_install" src="hooks/ios/copy-google-services.js"/>
     </platform>
 
     <platform name="android">
@@ -35,7 +35,7 @@
             <string name="google_api_key">@string/google_api_key</string>
         </edit-file>
 
-        <hook type="after_prepare" src="hooks/android/copy-google-services.js"/>
+        <hook type="before_plugin_install" src="hooks/android/copy-google-services.js"/>
     </platform>
 
 </plugin>
